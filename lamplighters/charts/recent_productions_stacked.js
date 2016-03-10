@@ -7,6 +7,12 @@ $(function () {
       categories: ["The Merry Widow 2007", "Carousel 2007", "Pinafore 2007", "The Secret Garden 2008", "Mikado 2008", "Iolanthe 2009", "Bittersweet 2009", "My Fair Lady 2009", "Gala: Star Drek, The Generation After That 2009", "Patience 2010", "Pirates 2010", "Yeomen 2011", "Engaged 2011", "Trial 2011", "Pinafore 2011", "Gondoliers 2012", "Mikado 2012", "Princess Ida 2013", "The Sorcerer 2013", "Grand Duke 2015"]
     },
 
+    yAxis: {
+      title: {
+        text: '# Performers'
+      }
+    },
+
     title: {
       text: "Cast composition per production by Time in Lamplighters"
     },
