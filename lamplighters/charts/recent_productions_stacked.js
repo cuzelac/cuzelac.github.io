@@ -1,5 +1,4 @@
-$(function () {
-  $('#stacked').highcharts({
+var bar_chart = {
     chart: {
       type: 'column',
     },
@@ -37,5 +36,13 @@ $(function () {
     tooltip: {
       pointFormat: '{series.name}: <b>{point.y}</b> ({point.percentage:.1f}%)<br/>'
     }
-  });
+  }
+
+var pct_chart = jQuery.extend(true, {}, bar_chart)
+pct_chart.plotOptions.series.stacking = 'percent'
+pct_chart.yAxis.title.text = '% performers'
+
+$(function () {
+  $('#stacked').highcharts(bar_chart);
+  $('#stacked_pct').highcharts(pct_chart);
 });
