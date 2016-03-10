@@ -13,7 +13,7 @@ var bar_chart = {
     },
 
     title: {
-      text: "Cast composition per production by Time in Lamplighters"
+      text: "Cast composition per production by Time in Lamplighters (Raw Numbers)"
     },
 
     plotOptions: {
@@ -41,6 +41,7 @@ var bar_chart = {
 var pct_chart = jQuery.extend(true, {}, bar_chart)
 pct_chart.plotOptions.series.stacking = 'percent'
 pct_chart.yAxis.title.text = '% performers'
+pct_chart.title.text = "Cast composition per production by Time in Lamplighters (Percentage)"
 
 $(function () {
   $('#stacked').highcharts(bar_chart);
